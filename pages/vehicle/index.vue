@@ -60,7 +60,7 @@ export default {
   },
   mounted() {
     this.$axios
-      .get('http://192.168.2.34:5000/vehicle/')
+      .get('/vehicle/')
       .then((response) => (this.towns = response.data))
   },
   methods: {

@@ -27,7 +27,7 @@
     <!--    </v-data-table>-->
     <BarChart
       :data_source="
-        'http://192.168.2.34:5000/company/' +
+        '/company/' +
           this.$route.params.id +
           '/timescale_data'
       "
@@ -72,7 +72,7 @@ export default {
   },
   mounted() {
     this.$axios
-      .get('http://192.168.2.34:5000/company/')
+      .get('/company/')
       .then((response) => (this.companies = response.data))
   },
   methods: {
