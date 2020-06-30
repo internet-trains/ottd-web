@@ -54,7 +54,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: process.env.BASE_URL || 'http://localhost:5000'
+    baseURL: process.env.BASE_URL
   },
   /*
   ** vuetify module configuration
