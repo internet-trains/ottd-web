@@ -22,7 +22,7 @@ export default {
     return {
       headers: [
         {
-          text: 'Towns',
+          text: 'Town',
           align: 'start',
           sortable: false,
           value: 'name'

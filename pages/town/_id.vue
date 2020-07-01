@@ -6,6 +6,7 @@
           this.$route.params.id +
           '/timescale_data'
       " y_axis="population"
+      :height="200"
     ></BarChart>
   </v-card>
 </template>
@@ -41,11 +42,6 @@ export default {
       .then((response) => (this.towns = response.data))
   },
   methods: {
-    getColor(calories) {
-      if (calories > 400) return 'red'
-      else if (calories > 200) return 'orange'
-      else return 'green'
-    }
   }
 }
 </script>

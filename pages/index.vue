@@ -9,16 +9,19 @@
       sm8
       md6
     >
+      <TodaysCalendar />
     </v-flex>
   </v-layout>
 </template>
 
 <script>
 
-import BarChart from "../components/BarChart";
+import BarChart from "@/components/BarChart";
+import TodaysCalendar from "@/components/TodaysCalendar";
 export default {
   components: {
     BarChart,
+    TodaysCalendar
   }
 }
 </script>

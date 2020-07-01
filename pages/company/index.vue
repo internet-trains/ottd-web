@@ -34,7 +34,7 @@ export default {
     return {
       headers: [
         {
-          text: 'Companies',
+          text: 'Company',
           align: 'start',
           sortable: false,
           value: 'name'
@@ -87,7 +87,7 @@ export default {
       ][color]
     },
     handleClick(row) {
-      this.$router.push('/company/' + row.id + "/")
+      this.$router.push('/company/' + row.id + '/')
     }
   }
 }

@@ -41,7 +41,7 @@ export default {
     return {
       headers: [
         {
-          text: 'Vehicles',
+          text: 'Vehicle',
           align: 'start',
           sortable: false,
           value: 'name'

@@ -32,6 +32,7 @@
           '/timescale_data'
       "
       :y_axis="'money'"
+      :height="200"
     ></BarChart>
   </v-card>
 </template>
@@ -58,14 +59,6 @@ export default {
         { text: 'Start Year', value: 'start_year' }
       ],
       companies: [
-        // {
-        //   name: 'Frozen Yogurt',
-        //   calories: 159,
-        //   fat: 6.0,
-        //   carbs: 24,
-        //   protein: 4.0,
-        //   iron: '1%',
-        // },
       ],
       search: ''
     }

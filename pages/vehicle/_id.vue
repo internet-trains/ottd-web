@@ -1,12 +1,9 @@
 <template>
   <v-card>
     <BarChart
-      :data_source="
-        '/vehicle/' +
-          this.$route.params.id +
-          '/timescale_data'
-      "
+      :data_source="'/vehicle/' + this.$route.params.id + '/timescale_data'"
       :y_axis="'profit_this_year'"
+      :height="200"
     ></BarChart>
   </v-card>
 </template>
@@ -21,7 +18,7 @@ export default {
     return {
       headers: [
         {
-          text: 'Towns',
+          text: 'Town',
           align: 'start',
           sortable: false,
           value: 'name'
@@ -37,22 +34,15 @@ export default {
     }
   },
   mounted() {
-    this.$axios
-      .get('/town/')
-      .then((response) => (this.towns = response.data))
+    this.$axios.get('/town/').then((response) => (this.towns = response.data))
   },
-  methods: {
-    getColor(calories) {
-      if (calories > 400) return 'red'
-      else if (calories > 200) return 'orange'
-      else return 'green'
-    }
-  }
+  methods: {}
 }
 </script>
 
 <style>
 v-card {
   max-width: 200px;
+  height: 200px;
 }
 </style>
