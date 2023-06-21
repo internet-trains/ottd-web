@@ -19,7 +19,7 @@
     "@types/chart.js": "^2.9.21",
     "chart.js": "^2.9.3",
     "moment": "^2.26.0",
-    "nuxt": "^2.12.2",
+    "nuxt": "^3.4.3",
     "vue-chartjs": "^3.5.0"
   },
   "devDependencies": {
